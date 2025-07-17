@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Feedback Form</title>
+    <link rel="stylesheet" href="BOT.CSS">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Register for Instant Feedback!</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="emailInput" placeholder="Enter your email" onkeyup="validateEmail()">
+                <div id="emailFeedback" class="feedback-message"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="passwordInput" placeholder="Create a password" onkeyup="validatePassword()">
+                <div id="passwordFeedback" class="feedback-message"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPasswordInput" placeholder="Confirm your password" onkeyup="confirmPasswords()">
+                <div id="confirmPasswordFeedback" class="feedback-message"></div>
+            </div>
+
+            <button type="submit" id="submitButton" enabled>Register</button>
+        </form>
+    </div>
+
+    <script src="BOT.JS"></script>
+</body>
+</html>
